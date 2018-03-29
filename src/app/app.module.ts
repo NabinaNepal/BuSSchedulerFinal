@@ -9,16 +9,15 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { TrackOrderPage } from '../pages/track-order/track-order';
-import { WelcomeBusSchedulerPage } from '../pages/welcome-bus-scheduler/welcome-bus-scheduler';
-import { MenuPage } from '../pages/menu/menu';
+import { TabsPage } from '../pages/tabs/tabs';
 import { Items } from '../mocks/providers/items';
 import { Settings } from '../providers/providers';
 import { User } from '../providers/providers';
 import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
 import { Geolocation } from '@ionic-native/geolocation';
-import { WelcomePage } from '../pages/welcome/welcome';
-import { TabsPage } from '../pages/tabs/tabs';
+
+
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -45,9 +44,6 @@ export function provideSettings(storage: Storage) {
   declarations: [
     MyApp,
     TrackOrderPage,
-    WelcomeBusSchedulerPage,
-    WelcomePage,
-    MenuPage,
     TabsPage
   ],
   imports: [
@@ -67,9 +63,6 @@ export function provideSettings(storage: Storage) {
   entryComponents: [
     MyApp,
     TrackOrderPage,
-    WelcomePage,
-    WelcomeBusSchedulerPage,
-    MenuPage,
     TabsPage
   
   ],
