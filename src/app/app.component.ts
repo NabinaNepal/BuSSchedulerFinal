@@ -49,8 +49,8 @@ export class MyApp {
     { title: 'Settings', component: 'SettingsPage' },
     { title: 'Search', component: 'SearchPage' },
     { title: 'WelcomBusScheduler', component: 'WelcomeBusSchedulerPage' },
-    { title: 'TrackOrder', component: 'TrackOrderPage' }
-   
+    { title: 'TrackOrder', component: 'TrackOrderPage' },
+    { title: 'Tabs', component: 'TabsPage' }
 
   ]
 

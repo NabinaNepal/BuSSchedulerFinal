@@ -7,48 +7,38 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
+    "name": "Sajha Bus",
     "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Burt is a Bear.",
+    "about": "Arrival Time: 10 a.m"
   };
 
 
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "name": "Sajha Bus",
+        "profilePic": "assets/img/Busses/SajhaBus.jpg",
+        "about": "Arrival Time: 10 a.m"
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "name": "City Bus",
+        "profilePic": "assets/img/Busses/MetroBus.jpg",
+        "about": "Arrival Time: 10:15 a.m."
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "name": "Orange Bus",
+        "profilePic": "assets/img/Busses/other.jpg",
+        "about": "Arrival Time: 10:15 a.m."
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "name": "Metro Bus",
+        "profilePic": "assets/img/Busses/MetroBus.jpg",
+        "about": "Arrival Time: 9:45 a.m."
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
-      },
-      {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
-      },
-      {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "name": "Test Bus",
+        "profilePic": "assets/img/Busses/other.jpg",
+        "about": "Arrival Time: 9:45 a.m."
       }
     ];
 
