@@ -86,4 +86,5 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="TO LOCATE BUS" />
     </plugin>
+    <engine name="android" spec="^6.2.3" />
 </widget>

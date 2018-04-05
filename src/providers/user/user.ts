@@ -33,6 +33,7 @@ export class User {
    * Send a POST request to our login endpoint with the data
    * the user entered on the form.
    */
+  //ValidateLogin
   login(accountInfo: any) {
     let seq = this.api.post('login', accountInfo).share();
 
