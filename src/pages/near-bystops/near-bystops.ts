@@ -63,8 +63,8 @@ export class NearBystopsPage {
     });
 
     google.maps.event.addListener(marker, 'click', function () {
-      this.infowindow.setContent(place.name);
-      this.infowindow.open(this.map, this);
+      infowindow.setContent(place.name);
+      infowindow.open(this.map, this);
     });
   }
 

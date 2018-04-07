@@ -9,6 +9,9 @@ import { WelcomeBusSchedulerPage } from '../../pages/welcome-bus-scheduler/welco
 import { MenuPage } from '../../pages/Menu/menu';
 import { TabsPage } from '../tabs/tabs';
 
+
+import { AuthCompleteService } from '../../providers/authcomplete.service';
+
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -18,7 +21,7 @@ export class LoginPage {
   // The account fields for the login form.
   // If you're using the username field with or without email, make
   // sure to add it to the type
-  account: { email: string, password: string} = {
+  account: { email: string, password: string } = {
     email: 'test@example.com',
     password: 'test'
   };
@@ -28,6 +31,7 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController,
     public user: User,
+    public authService: AuthCompleteService,//added this for authcompleteservice
     public toastCtrl: ToastController,
     public translateService: TranslateService) {
 
