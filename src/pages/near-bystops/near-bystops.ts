@@ -45,6 +45,7 @@ export class NearBystopsPage {
       zoom: 15
     });
 
+    infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch({
       location: pyrmont,
@@ -63,8 +64,9 @@ export class NearBystopsPage {
     });
 
     google.maps.event.addListener(marker, 'click', function () {
+      console.log(place);
       infowindow.setContent(place.name);
-      infowindow.open(this.map, this);
+      infowindow.open(map, this);
     });
   }
 
