@@ -35,16 +35,16 @@ export class TrackLocationPage {
   ionViewDidEnter() {
     this.platform.ready().then(() => {
       console.log("Device is ready! View did enter!");
-      let options = {
-        enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 0
-      }
-      this.geolocation.getCurrentPosition(options).then((resp) => {
-        alert("My position: " + resp.coords.latitude + ", " + resp.coords.longitude);
-      }).catch((error) => {
-        alert("Error getting location Code: " + error.code + ", Message: " + error.message);
-      });
+      // let options = {
+      //   enableHighAccuracy: true,
+      //   timeout: 10000,
+      //   maximumAge: 0
+      // }
+      // this.geolocation.getCurrentPosition(options).then((resp) => {
+      //  // alert("My position: " + resp.coords.latitude + ", " + resp.coords.longitude);
+      // }).catch((error) => {
+      //   alert("Error getting location Code: " + error.code + ", Message: " + error.message);
+      // });
     });
   }
   loadMap() {
@@ -57,7 +57,7 @@ export class TrackLocationPage {
       this.geolocation.getCurrentPosition(options).then((position) => {
         console.log(JSON.stringify(position));
         let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
+      // var latLng = new google.maps.LatLng(  38.758034,  -93.739136 );
         let mapOptions = {
           center: latLng,
           zoom: 15,
@@ -69,6 +69,7 @@ export class TrackLocationPage {
       }, (err) => {
         console.log('error');
         alert(err);
+        console.log(JSON.stringify(err));
       });
     })
 

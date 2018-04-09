@@ -8,7 +8,7 @@ import { FirstRunPage } from '../pages/pages';
 import { Settings } from '../providers/providers';
 import { MenuPage } from './../pages/menu/menu';
 import { TabsPage } from './../pages/tabs/tabs';
-import { TrackOrderPage } from './../pages/track-order/track-order';
+import { ListMasterPage } from './../pages/list-master/list-master';
 @Component({
   // template: `<ion-menu [content]="content">
   //   <ion-header>
@@ -50,7 +50,8 @@ export class MyApp {
     { title: 'Search', component: 'SearchPage' },
     { title: 'WelcomBusScheduler', component: 'WelcomeBusSchedulerPage' },
     { title: 'TrackOrder', component: 'TrackOrderPage' },
-    { title: 'Tabs', component: 'TabsPage' }
+    { title: 'Tabs', component: 'TabsPage' },
+    { title: 'ListMaster', component: 'ListMasterPage' },
 
   ]
 

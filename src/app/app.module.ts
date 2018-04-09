@@ -18,7 +18,7 @@ import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
 import { Geolocation } from '@ionic-native/geolocation';
 import { AuthCompleteService } from '../providers/authcomplete.service';
-
+import { ListMasterPage } from '../pages/list-master/list-master';
 
 
 // The translate loader needs to know where to load i18n files
@@ -46,7 +46,8 @@ export function provideSettings(storage: Storage) {
   declarations: [
     MyApp,
     TrackOrderPage,
-    TabsPage
+    TabsPage,
+    ListMasterPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +67,8 @@ export function provideSettings(storage: Storage) {
   entryComponents: [
     MyApp,
     TrackOrderPage,
-    TabsPage
+    TabsPage,
+    ListMasterPage
 
   ],
   providers: [
